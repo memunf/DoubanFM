@@ -12,6 +12,10 @@
 		62BCD3491CD9F01200DAED0E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BCD3481CD9F01200DAED0E /* AVFoundation.framework */; };
 		62BCD3521CDA137600DAED0E /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BCD3511CDA137600DAED0E /* UserInfoViewController.m */; };
 		62BCD3551CDA1B8500DAED0E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BCD3541CDA1B8500DAED0E /* LoginViewController.m */; };
+		62BCD3591CDA250200DAED0E /* ChannelsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BCD3571CDA250200DAED0E /* ChannelsTableViewCell.m */; };
+		62BCD35A1CDA250200DAED0E /* ChannelsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62BCD3581CDA250200DAED0E /* ChannelsTableViewCell.xib */; };
+		62BCD35C1CDA258600DAED0E /* ChannelsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62BCD35B1CDA258600DAED0E /* ChannelsTableViewController.xib */; };
+		62BCD35F1CDA25F800DAED0E /* ChannelsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BCD35E1CDA25F800DAED0E /* ChannelsTableViewController.m */; };
 		62EEB31B1CD2F69C00B92023 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EEB31A1CD2F69C00B92023 /* main.m */; };
 		62EEB31E1CD2F69C00B92023 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EEB31D1CD2F69C00B92023 /* AppDelegate.m */; };
 		62EEB3211CD2F69C00B92023 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EEB3201CD2F69C00B92023 /* ViewController.m */; };
@@ -29,6 +33,12 @@
 		62BCD3511CDA137600DAED0E /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
 		62BCD3531CDA1B8500DAED0E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		62BCD3541CDA1B8500DAED0E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		62BCD3561CDA250200DAED0E /* ChannelsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelsTableViewCell.h; sourceTree = "<group>"; };
+		62BCD3571CDA250200DAED0E /* ChannelsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelsTableViewCell.m; sourceTree = "<group>"; };
+		62BCD3581CDA250200DAED0E /* ChannelsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelsTableViewCell.xib; sourceTree = "<group>"; };
+		62BCD35B1CDA258600DAED0E /* ChannelsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelsTableViewController.xib; sourceTree = "<group>"; };
+		62BCD35D1CDA25F800DAED0E /* ChannelsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelsTableViewController.h; sourceTree = "<group>"; };
+		62BCD35E1CDA25F800DAED0E /* ChannelsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelsTableViewController.m; sourceTree = "<group>"; };
 		62EEB3161CD2F69B00B92023 /* DouBanMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouBanMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62EEB31A1CD2F69C00B92023 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62EEB31C1CD2F69C00B92023 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,6 +126,8 @@
 				62BCD3511CDA137600DAED0E /* UserInfoViewController.m */,
 				62BCD3531CDA1B8500DAED0E /* LoginViewController.h */,
 				62BCD3541CDA1B8500DAED0E /* LoginViewController.m */,
+				62BCD35D1CDA25F800DAED0E /* ChannelsTableViewController.h */,
+				62BCD35E1CDA25F800DAED0E /* ChannelsTableViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -130,6 +142,10 @@
 		62EEB3331CD2FB1E00B92023 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				62BCD3561CDA250200DAED0E /* ChannelsTableViewCell.h */,
+				62BCD3571CDA250200DAED0E /* ChannelsTableViewCell.m */,
+				62BCD3581CDA250200DAED0E /* ChannelsTableViewCell.xib */,
+				62BCD35B1CDA258600DAED0E /* ChannelsTableViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -215,7 +231,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				62EEB3291CD2F69C00B92023 /* LaunchScreen.storyboard in Resources */,
+				62BCD35A1CDA250200DAED0E /* ChannelsTableViewCell.xib in Resources */,
 				62EEB3261CD2F69C00B92023 /* Assets.xcassets in Resources */,
+				62BCD35C1CDA258600DAED0E /* ChannelsTableViewController.xib in Resources */,
 				62EEB3241CD2F69C00B92023 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +296,9 @@
 				62EEB3211CD2F69C00B92023 /* ViewController.m in Sources */,
 				62BCD3551CDA1B8500DAED0E /* LoginViewController.m in Sources */,
 				62EEB31E1CD2F69C00B92023 /* AppDelegate.m in Sources */,
+				62BCD3591CDA250200DAED0E /* ChannelsTableViewCell.m in Sources */,
 				62EEB31B1CD2F69C00B92023 /* main.m in Sources */,
+				62BCD35F1CDA25F800DAED0E /* ChannelsTableViewController.m in Sources */,
 				62BCD3521CDA137600DAED0E /* UserInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
