@@ -32,31 +32,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XV3-JH-Veb" userLabel="LogoutButton">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="pie-Eo-xQ6"/>
-                                    <constraint firstAttribute="width" secondItem="XV3-JH-Veb" secondAttribute="height" multiplier="100:19" id="vZv-ZE-NPf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="登出"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="pie-Eo-xQ6"/>
-                                        <exclude reference="vZv-ZE-NPf"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="53" y="529" width="221" height="30"/>
-                                    <mask key="constraints">
-                                        <include reference="pie-Eo-xQ6"/>
-                                        <include reference="vZv-ZE-NPf"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="logoutButtonTapped:" destination="w6H-ar-3LB" eventType="touchUpInside" id="YNU-f8-UNy"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HGG-qd-B7f" userLabel="login Image ">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
@@ -137,11 +112,35 @@
                                     <rect key="frame" x="80" y="59" width="184" height="36"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XV3-JH-Veb" userLabel="LogoutButton">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="pie-Eo-xQ6"/>
+                                    <constraint firstAttribute="width" secondItem="XV3-JH-Veb" secondAttribute="height" multiplier="100:19" id="vZv-ZE-NPf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="登出"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pie-Eo-xQ6"/>
+                                        <exclude reference="vZv-ZE-NPf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="36" y="542" width="221" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="pie-Eo-xQ6"/>
+                                        <include reference="vZv-ZE-NPf"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="logoutButtonTapped:" destination="w6H-ar-3LB" eventType="touchUpInside" id="YNU-f8-UNy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="XV3-JH-Veb"/>
                                 <exclude reference="HGG-qd-B7f"/>
                                 <exclude reference="Jyn-Ey-MYO"/>
                                 <exclude reference="9dg-b3-Sw3"/>
@@ -150,11 +149,11 @@
                                 <exclude reference="hyD-kB-OGL"/>
                                 <exclude reference="jgu-gW-VKa"/>
                                 <exclude reference="26Y-mc-efz"/>
+                                <exclude reference="XV3-JH-Veb"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="XV3-JH-Veb"/>
                                 <include reference="HGG-qd-B7f"/>
                                 <include reference="Jyn-Ey-MYO"/>
                                 <include reference="9dg-b3-Sw3"/>
@@ -163,6 +162,7 @@
                                 <include reference="hyD-kB-OGL"/>
                                 <include reference="jgu-gW-VKa"/>
                                 <include reference="26Y-mc-efz"/>
+                                <include reference="XV3-JH-Veb"/>
                             </mask>
                         </variation>
                     </view>
@@ -292,7 +292,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="498" y="-35"/>
+            <point key="canvasLocation" x="700.5" y="-18"/>
         </scene>
     </scenes>
 </document>
