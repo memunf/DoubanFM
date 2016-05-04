@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "SongInfo.h"
-#import "ChannelInfo.h"
+//#import "SongInfo.h"
+//#import "ChannelInfo.h"
 #import <AVFoundation/AVFoundation.h>
 @interface AppDelegate ()
 
@@ -18,18 +18,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    dispatch_once_t onceToken;
+    /*dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [self loadArchiver];//加载数据
         [self initChannelsDate];
         AVAudioSession * session=[AVAudioSession sharedInstance];//拿到音频播放的单利
         [session setCategory:AVAudioSessionCategoryPlayback error:nil];//设置音频会话类别：独占音乐播放，后台播放
         [session setActive:YES error:nil];//启动
-    });
+    });*/
         // Override point for customization after application launch.
     return YES;
 }
--(void)loadArchiver
+/*-(void)loadArchiver
 {
     NSString* homePath=[NSHomeDirectory() stringByAppendingString:@"documents"];//沙盒路径
     NSString * appdelegatePath=[homePath stringByAppendingString:@"appdelegate.archiver"];//归档的数据
@@ -65,7 +65,7 @@
     [channels addObject:upTrendingChannels];
     NSMutableArray *hotChannels = [NSMutableArray array]; //热门兆赫
     [channels addObject:hotChannels];
-}
+}*/
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -86,7 +86,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    [self.userInfo archiverUserInfo];//对userinfo进行归档
+    //[self.userInfo archiverUserInfo];//对userinfo进行归档
 }
 
 @end

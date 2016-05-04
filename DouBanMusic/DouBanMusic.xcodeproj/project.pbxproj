@@ -10,6 +10,8 @@
 		441C74FF260BE38E8DE6746F /* libPods-DouBanMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FBF3BEEA57684B01B6047F /* libPods-DouBanMusic.a */; };
 		6279F4041CD99CB8009422BE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6279F4031CD99CB8009422BE /* MediaPlayer.framework */; };
 		62BCD3491CD9F01200DAED0E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BCD3481CD9F01200DAED0E /* AVFoundation.framework */; };
+		62BCD3521CDA137600DAED0E /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BCD3511CDA137600DAED0E /* UserInfoViewController.m */; };
+		62BCD3551CDA1B8500DAED0E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BCD3541CDA1B8500DAED0E /* LoginViewController.m */; };
 		62EEB31B1CD2F69C00B92023 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EEB31A1CD2F69C00B92023 /* main.m */; };
 		62EEB31E1CD2F69C00B92023 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EEB31D1CD2F69C00B92023 /* AppDelegate.m */; };
 		62EEB3211CD2F69C00B92023 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EEB3201CD2F69C00B92023 /* ViewController.m */; };
@@ -23,6 +25,10 @@
 		59254E6465B63625F78766C7 /* Pods-DouBanMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouBanMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouBanMusic/Pods-DouBanMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		6279F4031CD99CB8009422BE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		62BCD3481CD9F01200DAED0E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		62BCD3501CDA137600DAED0E /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		62BCD3511CDA137600DAED0E /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		62BCD3531CDA1B8500DAED0E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		62BCD3541CDA1B8500DAED0E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		62EEB3161CD2F69B00B92023 /* DouBanMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouBanMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62EEB31A1CD2F69C00B92023 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62EEB31C1CD2F69C00B92023 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +112,10 @@
 		62EEB3311CD2FB0600B92023 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				62BCD3501CDA137600DAED0E /* UserInfoViewController.h */,
+				62BCD3511CDA137600DAED0E /* UserInfoViewController.m */,
+				62BCD3531CDA1B8500DAED0E /* LoginViewController.h */,
+				62BCD3541CDA1B8500DAED0E /* LoginViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -266,8 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				62EEB3211CD2F69C00B92023 /* ViewController.m in Sources */,
+				62BCD3551CDA1B8500DAED0E /* LoginViewController.m in Sources */,
 				62EEB31E1CD2F69C00B92023 /* AppDelegate.m in Sources */,
 				62EEB31B1CD2F69C00B92023 /* main.m in Sources */,
+				62BCD3521CDA137600DAED0E /* UserInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
