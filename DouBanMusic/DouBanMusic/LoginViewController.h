@@ -7,14 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface LoginViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UIImageView *captchaImageview;
-@property (strong, nonatomic) IBOutlet UITextField *username;
-@property (strong, nonatomic) IBOutlet UITextField *password;
-@property (strong, nonatomic) IBOutlet UITextField *captcha;
-- (IBAction)submitButtonTapped:(UIButton *)sender;
-- (IBAction)cancelButtonTapped:(UIButton *)sender;
-- (IBAction)backgroundTap:(id)sender;
+#import "AFNetworking.h"
+#import "AppDelegate.h"
+#import "NetworkManager.h"
+#import "ProtocolClass.h"
+@interface LoginViewController : UIViewController<DoubanDelegate>
+@property (strong, nonatomic) IBOutlet UIImageView *captchaImageview;/**<验证码*/
+@property (strong, nonatomic) IBOutlet UITextField *username;/**<用户名*/
+@property (strong, nonatomic) IBOutlet UITextField *password;/**<密码*/
+@property (strong, nonatomic) IBOutlet UITextField *captcha;/**<验证码*/
+- (IBAction)submitButtonTapped:(UIButton *)sender;/**<提交按钮*/
+- (IBAction)cancelButtonTapped:(UIButton *)sender;/**<取消*/
+- (IBAction)backgroundTap:(id)sender;/**<点击屏幕*/
+@property(weak,nonatomic)id<DoubanDelegate>delegate;//将delegate作为它的属性
 
 @end

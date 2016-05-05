@@ -7,39 +7,71 @@
 //
 
 #import "LoginViewController.h"
-
+#import "NetworkManager.h"
+#import "UIImageView+AFNetworking.h"
 @interface LoginViewController ()
-
+{
+    NSMutableString* captchaID;/**<验证码ID*/
+    NetworkManager* networkManager;
+    AppDelegate* appDelegate;
+}
 @end
 
 @implementation LoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //从应用程序的单例类对象中得到应用程序委托的对象
+    appDelegate = [[UIApplication sharedApplication]delegate];
+    networkManager = [[NetworkManager alloc]init];
+    networkManager.delegate =(id)self;//设置networkManager的代理
+    //初始化点击图片事件
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(loadCaptchaImage)];
+    [singleTap setNumberOfTouchesRequired:1];//设置单击点击请求
+    self.captchaImageview.userInteractionEnabled =YES;//设置交互允许
+    [self.captchaImageview addGestureRecognizer:singleTap];//添加单击手势到验证码图片上
+    
+    
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//当试界面将要出现时要做的事
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self loadCaptchaImage];
+    [super viewWillAppear:animated];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+//加载验证码图片
+- (void)loadCaptchaImage
+{
+    [networkManager loadCaptchaImage];//通过networkmanager 调用加载验证码
+    
 }
-*/
-
+//通过URL拿到网上资源
+- (void)setCaptchaImageWithURLString:(NSString*)url
+{
+    [self.captchaImageview setImageWithURL:[NSURL URLWithString:url]];
+}
+//提交用户登录的信息
 - (IBAction)submitButtonTapped:(UIButton *)sender {
+    NSString* username = _username.text;//拿到输入的内容
+    NSString* password = _password.text;
+    NSString* captcha = _captcha.text;
+    [networkManager LoginwithUsername:username Password:password Captcha:captcha RememberOnorOff:@"off"];
 }
 
+//取消登录
 - (IBAction)cancelButtonTapped:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)backgroundTap:(id)sender {
+- (void)loadSuccess
+{
+    [_delegate setUserInfo];//初始化用户信息delegate
 }
+- (IBAction)backgroundTap:(id)sender {
+//    点击屏幕后挂起
+    [_username resignFirstResponder];
+    [_password resignFirstResponder];
+    [_captcha resignFirstResponder];
+}
+
 @end
