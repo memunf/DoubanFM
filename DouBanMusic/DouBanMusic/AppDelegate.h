@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import<MediaPlayer/MediaPlayer.h>
-//#import "UserInfo.h"
-//#import "DFMPlaylist.h"
+#import "UserInfo.h"
+#import "DFMPlaylist.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-//@property(nonatomic,strong)UserInfo* userInfo;/**<用户信息>*/
+@property(nonatomic,strong)UserInfo* userInfo;/**<用户信息>*/
 
 @end
 

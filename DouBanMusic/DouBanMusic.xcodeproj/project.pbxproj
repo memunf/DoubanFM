@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		441C74FF260BE38E8DE6746F /* libPods-DouBanMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FBF3BEEA57684B01B6047F /* libPods-DouBanMusic.a */; };
 		621324FC1CDB300E00DE3AFE /* SidebarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 621324FB1CDB300E00DE3AFE /* SidebarController.m */; };
+		6213250F1CDC39D700DE3AFE /* ChannelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6213250E1CDC39D700DE3AFE /* ChannelInfo.m */; };
+		621325141CDC39E500DE3AFE /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 621325111CDC39E500DE3AFE /* NetworkManager.m */; };
+		621325151CDC39E500DE3AFE /* ProtocolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 621325131CDC39E500DE3AFE /* ProtocolClass.m */; };
+		621325181CDC3A4000DE3AFE /* PlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 621325171CDC3A4000DE3AFE /* PlayerController.m */; };
 		6279F4041CD99CB8009422BE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6279F4031CD99CB8009422BE /* MediaPlayer.framework */; };
 		62BCD3491CD9F01200DAED0E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BCD3481CD9F01200DAED0E /* AVFoundation.framework */; };
 		62BCD3521CDA137600DAED0E /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BCD3511CDA137600DAED0E /* UserInfoViewController.m */; };
@@ -17,6 +21,7 @@
 		62BCD35A1CDA250200DAED0E /* ChannelsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62BCD3581CDA250200DAED0E /* ChannelsTableViewCell.xib */; };
 		62BCD35C1CDA258600DAED0E /* ChannelsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62BCD35B1CDA258600DAED0E /* ChannelsTableViewController.xib */; };
 		62BCD35F1CDA25F800DAED0E /* ChannelsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BCD35E1CDA25F800DAED0E /* ChannelsTableViewController.m */; };
+		62CAF1891CDC8BFD00404F9C /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CAF1881CDC8BFD00404F9C /* PlayerViewController.m */; };
 		62EEB31B1CD2F69C00B92023 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EEB31A1CD2F69C00B92023 /* main.m */; };
 		62EEB31E1CD2F69C00B92023 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EEB31D1CD2F69C00B92023 /* AppDelegate.m */; };
 		62EEB3211CD2F69C00B92023 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EEB3201CD2F69C00B92023 /* ViewController.m */; };
@@ -30,6 +35,14 @@
 		59254E6465B63625F78766C7 /* Pods-DouBanMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouBanMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouBanMusic/Pods-DouBanMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		621324FA1CDB300E00DE3AFE /* SidebarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarController.h; sourceTree = "<group>"; };
 		621324FB1CDB300E00DE3AFE /* SidebarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarController.m; sourceTree = "<group>"; };
+		6213250D1CDC39D700DE3AFE /* ChannelInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelInfo.h; sourceTree = "<group>"; };
+		6213250E1CDC39D700DE3AFE /* ChannelInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelInfo.m; sourceTree = "<group>"; };
+		621325101CDC39E500DE3AFE /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		621325111CDC39E500DE3AFE /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		621325121CDC39E500DE3AFE /* ProtocolClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolClass.h; sourceTree = "<group>"; };
+		621325131CDC39E500DE3AFE /* ProtocolClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolClass.m; sourceTree = "<group>"; };
+		621325161CDC3A4000DE3AFE /* PlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerController.h; sourceTree = "<group>"; };
+		621325171CDC3A4000DE3AFE /* PlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerController.m; sourceTree = "<group>"; };
 		6279F4031CD99CB8009422BE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		62BCD3481CD9F01200DAED0E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		62BCD3501CDA137600DAED0E /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
@@ -42,6 +55,8 @@
 		62BCD35B1CDA258600DAED0E /* ChannelsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelsTableViewController.xib; sourceTree = "<group>"; };
 		62BCD35D1CDA25F800DAED0E /* ChannelsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelsTableViewController.h; sourceTree = "<group>"; };
 		62BCD35E1CDA25F800DAED0E /* ChannelsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelsTableViewController.m; sourceTree = "<group>"; };
+		62CAF1871CDC8BFD00404F9C /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		62CAF1881CDC8BFD00404F9C /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		62EEB3161CD2F69B00B92023 /* DouBanMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouBanMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62EEB31A1CD2F69C00B92023 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62EEB31C1CD2F69C00B92023 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +106,14 @@
 		62EEB3181CD2F69C00B92023 /* DouBanMusic */ = {
 			isa = PBXGroup;
 			children = (
+				621325161CDC3A4000DE3AFE /* PlayerController.h */,
+				621325171CDC3A4000DE3AFE /* PlayerController.m */,
+				6213250D1CDC39D700DE3AFE /* ChannelInfo.h */,
+				6213250E1CDC39D700DE3AFE /* ChannelInfo.m */,
+				621325101CDC39E500DE3AFE /* NetworkManager.h */,
+				621325111CDC39E500DE3AFE /* NetworkManager.m */,
+				621325121CDC39E500DE3AFE /* ProtocolClass.h */,
+				621325131CDC39E500DE3AFE /* ProtocolClass.m */,
 				62EEB3331CD2FB1E00B92023 /* View */,
 				62EEB3321CD2FB1400B92023 /* model */,
 				62EEB3311CD2FB0600B92023 /* Controller */,
@@ -129,6 +152,8 @@
 				62BCD3511CDA137600DAED0E /* UserInfoViewController.m */,
 				62BCD3531CDA1B8500DAED0E /* LoginViewController.h */,
 				62BCD3541CDA1B8500DAED0E /* LoginViewController.m */,
+				62CAF1871CDC8BFD00404F9C /* PlayerViewController.h */,
+				62CAF1881CDC8BFD00404F9C /* PlayerViewController.m */,
 				62BCD35D1CDA25F800DAED0E /* ChannelsTableViewController.h */,
 				62BCD35E1CDA25F800DAED0E /* ChannelsTableViewController.m */,
 				621324FA1CDB300E00DE3AFE /* SidebarController.h */,
@@ -299,12 +324,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				62EEB3211CD2F69C00B92023 /* ViewController.m in Sources */,
+				6213250F1CDC39D700DE3AFE /* ChannelInfo.m in Sources */,
+				621325151CDC39E500DE3AFE /* ProtocolClass.m in Sources */,
 				62BCD3551CDA1B8500DAED0E /* LoginViewController.m in Sources */,
 				62EEB31E1CD2F69C00B92023 /* AppDelegate.m in Sources */,
+				62CAF1891CDC8BFD00404F9C /* PlayerViewController.m in Sources */,
 				62BCD3591CDA250200DAED0E /* ChannelsTableViewCell.m in Sources */,
 				621324FC1CDB300E00DE3AFE /* SidebarController.m in Sources */,
 				62EEB31B1CD2F69C00B92023 /* main.m in Sources */,
 				62BCD35F1CDA25F800DAED0E /* ChannelsTableViewController.m in Sources */,
+				621325141CDC39E500DE3AFE /* NetworkManager.m in Sources */,
+				621325181CDC3A4000DE3AFE /* PlayerController.m in Sources */,
 				62BCD3521CDA137600DAED0E /* UserInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +460,7 @@
 					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
 				);
 				INFOPLIST_FILE = DouBanMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lx.DouBanMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,6 +483,7 @@
 					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
 				);
 				INFOPLIST_FILE = DouBanMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lx.DouBanMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";

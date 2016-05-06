@@ -9,10 +9,11 @@
 #import "SidebarController.h"
 #import "PlayerViewController.h"
 #import "ChannelsTableViewController.h"
+#import <MJExtension.h>
 @interface SidebarController (){
     //将他们作为sideBarController 成员变量
-    CDSideBarController* sideBar;
-    PlayerViewController* playerVC;
+   // CDSideBarController* sideBar;
+    //PlayerViewController* playerVC;
     ChannelsTableViewCell* channelsVC;
     UserInfoViewController *userInfoVC;
     AppDelegate* appDelegate;
@@ -32,17 +33,27 @@
                            [UIImage imageNamed:@"menuLogin"],
                            [UIImage imageNamed:@"menuClose.png"]];
     
-    sideBar = [CDSideBarController sharedInstanceWithImages:imageList];
-    sideBar.delegate =(id)self;
-    //拿到mainStoryboard
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    playerVC = [[PlayerViewController alloc]init];
-    
+//    sideBar = [CDSideBarController sharedInstanceWithImages:imageList];
+//    sideBar.delegate =(id)self;
+//    //拿到mainStoryboard
+//    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    playerVC = [[PlayerViewController alloc]init];
+//    
 //    channelsVC = [[ChannelsTableViewController alloc]init];
 //    channelsVC.delegate = (id)self;
+//    userInfoVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"userInfoVC"];
+//    self.viewControllers = @[playerVC, channelsVC, userInfoVC];//存放在数组中
     
 }
 
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.tabBar.hidden =YES;//当界面将要出现时 tabbar隐藏
+}
 
 @end

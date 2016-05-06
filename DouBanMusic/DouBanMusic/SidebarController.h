@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CDSideBarController.h"
+//#import "CDSideBarController.h"
 #import "AppDelegate.h"
-#import "PlayerViewController.h"
+//#import "PlayerViewController.h"
 #import "ChannelsTableViewCell.h"
 #import "UserInfoViewController.h"
 #import "LoginViewController.h"

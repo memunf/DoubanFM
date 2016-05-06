@@ -33,6 +33,9 @@
 
 #if !TARGET_OS_WATCH
     #import "AFNetworkReachabilityManager.h"
+#import "AFURLConnectionOperation.h"
+#import "AFHTTPRequestOperation.h"
+#import "AFHTTPRequestOperationManager.h"
 #endif
 
     #import "AFURLSessionManager.h"
