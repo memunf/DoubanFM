@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		441C74FF260BE38E8DE6746F /* libPods-DouBanMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FBF3BEEA57684B01B6047F /* libPods-DouBanMusic.a */; };
+		4A980B0B1CDCC7D800D38567 /* ChannelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A980AF81CDCC7D800D38567 /* ChannelInfo.m */; };
+		4A980B0C1CDCC7D800D38567 /* DFMHotChannelsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A980AFA1CDCC7D800D38567 /* DFMHotChannelsEntity.m */; };
+		4A980B0D1CDCC7D800D38567 /* DFMPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A980AFC1CDCC7D800D38567 /* DFMPlaylist.m */; };
+		4A980B0E1CDCC7D800D38567 /* DFMRecChannelsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A980AFE1CDCC7D800D38567 /* DFMRecChannelsEntity.m */; };
+		4A980B0F1CDCC7D800D38567 /* DFMUpChannelsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A980B001CDCC7D800D38567 /* DFMUpChannelsEntity.m */; };
+		4A980B101CDCC7D800D38567 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A980B021CDCC7D800D38567 /* NetworkManager.m */; };
+		4A980B111CDCC7D800D38567 /* PlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A980B041CDCC7D800D38567 /* PlayerController.m */; };
+		4A980B121CDCC7D800D38567 /* ProtocolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A980B061CDCC7D800D38567 /* ProtocolClass.m */; };
+		4A980B131CDCC7D800D38567 /* SongInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A980B081CDCC7D800D38567 /* SongInfo.m */; };
+		4A980B141CDCC7D800D38567 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A980B0A1CDCC7D800D38567 /* UserInfo.m */; };
 		621324FC1CDB300E00DE3AFE /* SidebarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 621324FB1CDB300E00DE3AFE /* SidebarController.m */; };
 		6213250F1CDC39D700DE3AFE /* ChannelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6213250E1CDC39D700DE3AFE /* ChannelInfo.m */; };
 		621325141CDC39E500DE3AFE /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 621325111CDC39E500DE3AFE /* NetworkManager.m */; };
@@ -32,6 +42,26 @@
 
 /* Begin PBXFileReference section */
 		1BC015D6A380BEA9AF558FE0 /* Pods-DouBanMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouBanMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouBanMusic/Pods-DouBanMusic.release.xcconfig"; sourceTree = "<group>"; };
+		4A980AF71CDCC7D800D38567 /* ChannelInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelInfo.h; sourceTree = "<group>"; };
+		4A980AF81CDCC7D800D38567 /* ChannelInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelInfo.m; sourceTree = "<group>"; };
+		4A980AF91CDCC7D800D38567 /* DFMHotChannelsEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFMHotChannelsEntity.h; sourceTree = "<group>"; };
+		4A980AFA1CDCC7D800D38567 /* DFMHotChannelsEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFMHotChannelsEntity.m; sourceTree = "<group>"; };
+		4A980AFB1CDCC7D800D38567 /* DFMPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFMPlaylist.h; sourceTree = "<group>"; };
+		4A980AFC1CDCC7D800D38567 /* DFMPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFMPlaylist.m; sourceTree = "<group>"; };
+		4A980AFD1CDCC7D800D38567 /* DFMRecChannelsEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFMRecChannelsEntity.h; sourceTree = "<group>"; };
+		4A980AFE1CDCC7D800D38567 /* DFMRecChannelsEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFMRecChannelsEntity.m; sourceTree = "<group>"; };
+		4A980AFF1CDCC7D800D38567 /* DFMUpChannelsEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFMUpChannelsEntity.h; sourceTree = "<group>"; };
+		4A980B001CDCC7D800D38567 /* DFMUpChannelsEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFMUpChannelsEntity.m; sourceTree = "<group>"; };
+		4A980B011CDCC7D800D38567 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		4A980B021CDCC7D800D38567 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		4A980B031CDCC7D800D38567 /* PlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerController.h; sourceTree = "<group>"; };
+		4A980B041CDCC7D800D38567 /* PlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerController.m; sourceTree = "<group>"; };
+		4A980B051CDCC7D800D38567 /* ProtocolClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolClass.h; sourceTree = "<group>"; };
+		4A980B061CDCC7D800D38567 /* ProtocolClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolClass.m; sourceTree = "<group>"; };
+		4A980B071CDCC7D800D38567 /* SongInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongInfo.h; sourceTree = "<group>"; };
+		4A980B081CDCC7D800D38567 /* SongInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongInfo.m; sourceTree = "<group>"; };
+		4A980B091CDCC7D800D38567 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		4A980B0A1CDCC7D800D38567 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		59254E6465B63625F78766C7 /* Pods-DouBanMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouBanMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouBanMusic/Pods-DouBanMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		621324FA1CDB300E00DE3AFE /* SidebarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarController.h; sourceTree = "<group>"; };
 		621324FB1CDB300E00DE3AFE /* SidebarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarController.m; sourceTree = "<group>"; };
@@ -84,9 +114,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A980AF61CDCC7D800D38567 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A980AF71CDCC7D800D38567 /* ChannelInfo.h */,
+				4A980AF81CDCC7D800D38567 /* ChannelInfo.m */,
+				4A980AF91CDCC7D800D38567 /* DFMHotChannelsEntity.h */,
+				4A980AFA1CDCC7D800D38567 /* DFMHotChannelsEntity.m */,
+				4A980AFB1CDCC7D800D38567 /* DFMPlaylist.h */,
+				4A980AFC1CDCC7D800D38567 /* DFMPlaylist.m */,
+				4A980AFD1CDCC7D800D38567 /* DFMRecChannelsEntity.h */,
+				4A980AFE1CDCC7D800D38567 /* DFMRecChannelsEntity.m */,
+				4A980AFF1CDCC7D800D38567 /* DFMUpChannelsEntity.h */,
+				4A980B001CDCC7D800D38567 /* DFMUpChannelsEntity.m */,
+				4A980B011CDCC7D800D38567 /* NetworkManager.h */,
+				4A980B021CDCC7D800D38567 /* NetworkManager.m */,
+				4A980B031CDCC7D800D38567 /* PlayerController.h */,
+				4A980B041CDCC7D800D38567 /* PlayerController.m */,
+				4A980B051CDCC7D800D38567 /* ProtocolClass.h */,
+				4A980B061CDCC7D800D38567 /* ProtocolClass.m */,
+				4A980B071CDCC7D800D38567 /* SongInfo.h */,
+				4A980B081CDCC7D800D38567 /* SongInfo.m */,
+				4A980B091CDCC7D800D38567 /* UserInfo.h */,
+				4A980B0A1CDCC7D800D38567 /* UserInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		62EEB30D1CD2F69B00B92023 = {
 			isa = PBXGroup;
 			children = (
+				4A980AF61CDCC7D800D38567 /* Model */,
 				62EEB3301CD2FAE300B92023 /* CDSideBarController */,
 				62EEB3181CD2F69C00B92023 /* DouBanMusic */,
 				62EEB3171CD2F69B00B92023 /* Products */,
@@ -115,7 +173,6 @@
 				621325121CDC39E500DE3AFE /* ProtocolClass.h */,
 				621325131CDC39E500DE3AFE /* ProtocolClass.m */,
 				62EEB3331CD2FB1E00B92023 /* View */,
-				62EEB3321CD2FB1400B92023 /* model */,
 				62EEB3311CD2FB0600B92023 /* Controller */,
 				62EEB31C1CD2F69C00B92023 /* AppDelegate.h */,
 				62EEB31D1CD2F69C00B92023 /* AppDelegate.m */,
@@ -160,13 +217,6 @@
 				621324FB1CDB300E00DE3AFE /* SidebarController.m */,
 			);
 			name = Controller;
-			sourceTree = "<group>";
-		};
-		62EEB3321CD2FB1400B92023 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = model;
 			sourceTree = "<group>";
 		};
 		62EEB3331CD2FB1E00B92023 /* View */ = {
@@ -324,17 +374,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				62EEB3211CD2F69C00B92023 /* ViewController.m in Sources */,
+				4A980B0D1CDCC7D800D38567 /* DFMPlaylist.m in Sources */,
 				6213250F1CDC39D700DE3AFE /* ChannelInfo.m in Sources */,
+				4A980B0F1CDCC7D800D38567 /* DFMUpChannelsEntity.m in Sources */,
 				621325151CDC39E500DE3AFE /* ProtocolClass.m in Sources */,
 				62BCD3551CDA1B8500DAED0E /* LoginViewController.m in Sources */,
+				4A980B121CDCC7D800D38567 /* ProtocolClass.m in Sources */,
+				4A980B0C1CDCC7D800D38567 /* DFMHotChannelsEntity.m in Sources */,
+				4A980B141CDCC7D800D38567 /* UserInfo.m in Sources */,
 				62EEB31E1CD2F69C00B92023 /* AppDelegate.m in Sources */,
 				62CAF1891CDC8BFD00404F9C /* PlayerViewController.m in Sources */,
 				62BCD3591CDA250200DAED0E /* ChannelsTableViewCell.m in Sources */,
 				621324FC1CDB300E00DE3AFE /* SidebarController.m in Sources */,
 				62EEB31B1CD2F69C00B92023 /* main.m in Sources */,
 				62BCD35F1CDA25F800DAED0E /* ChannelsTableViewController.m in Sources */,
+				4A980B131CDCC7D800D38567 /* SongInfo.m in Sources */,
+				4A980B101CDCC7D800D38567 /* NetworkManager.m in Sources */,
 				621325141CDC39E500DE3AFE /* NetworkManager.m in Sources */,
+				4A980B0B1CDCC7D800D38567 /* ChannelInfo.m in Sources */,
 				621325181CDC3A4000DE3AFE /* PlayerController.m in Sources */,
+				4A980B0E1CDCC7D800D38567 /* DFMRecChannelsEntity.m in Sources */,
+				4A980B111CDCC7D800D38567 /* PlayerController.m in Sources */,
 				62BCD3521CDA137600DAED0E /* UserInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

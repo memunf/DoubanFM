@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    appDelegate = [[UIApplication sharedApplication]delegate];//s设置应用程序的委托代理
+    appDelegate = [[UIApplication sharedApplication]delegate];//设置应用程序的委托代理
     //将侧边栏上显示的图片存放在数组中
     NSArray *imageList = @[[UIImage imageNamed:@"menuPlayer"],
                            [UIImage imageNamed:@"menuChannel"],
@@ -46,6 +46,8 @@
     
 }
 
+
+//成为第一响应者
 - (BOOL)canBecomeFirstResponder
 {
     return YES;
@@ -54,6 +56,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     self.tabBar.hidden =YES;//当界面将要出现时 tabbar隐藏
+    
 }
 
 @end
