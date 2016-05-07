@@ -7,18 +7,55 @@
 //
 
 #import "UserInfoViewController.h"
-
+#import "CDSideBarController.h"
 @interface UserInfoViewController ()
-
+{
+    NetworkManager* networkManger;
+    UIStoryboard* mainStoryboard;
+    AppDelegate* appDelegate;
+}
 @end
 
 @implementation UserInfoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //加载名为Main的storyboard
+    mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    appDelegate = [[UIApplication sharedApplication] delegate];
+    //给登陆图片添加手势
+    UITapGestureRecognizer* singTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(loginImageTappde)];
+    //设置有效点击次数
+    [singTap setNumberOfTapsRequired:1];
+    //允许用户交互
+    self.loginImage.userInteractionEnabled = YES;
+    //把手势添加到登陆图片上
+    [self.loginImage addGestureRecognizer:singTap];
+    networkManger = [[NetworkManager alloc]init];
+    networkManger.delegate = (id)self;
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self setUserinfo];
+}
+-(void)viewDidLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    _loginImage.layer.cornerRadius = _loginImage.frame.size.width;
+    if (!_loginImage.clipsToBounds)
+    {
+        _loginImage.clipsToBounds = YES;
+    }
+
+}
+-(void)loginImageTappde
+{
+    LoginViewController* loginVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"loginVC"];
+    loginVC.delegate = (id)self;
+//    [CDSideBarController shareInstance]dismissMenu];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

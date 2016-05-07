@@ -56,6 +56,13 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     self.tabBar.hidden =YES;//当界面将要出现时 tabbar隐藏
+    for (UIView* child in self.tabBar.subviews)
+    {
+        if ([child isKindOfClass:[UIControl class]])
+        {
+            [child removeFromSuperview];//将child从父视图移除
+        }
+    }
     
 }
 
