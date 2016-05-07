@@ -18,6 +18,7 @@
 		4A980B121CDCC7D800D38567 /* ProtocolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A980B061CDCC7D800D38567 /* ProtocolClass.m */; };
 		4A980B131CDCC7D800D38567 /* SongInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A980B081CDCC7D800D38567 /* SongInfo.m */; };
 		4A980B141CDCC7D800D38567 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A980B0A1CDCC7D800D38567 /* UserInfo.m */; };
+		4AA380631CDDCE6A00DB0DBB /* CDSideBarControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA380621CDDCE6A00DB0DBB /* CDSideBarControllerDelegate.m */; };
 		621324FC1CDB300E00DE3AFE /* SidebarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 621324FB1CDB300E00DE3AFE /* SidebarController.m */; };
 		6213250F1CDC39D700DE3AFE /* ChannelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6213250E1CDC39D700DE3AFE /* ChannelInfo.m */; };
 		621325141CDC39E500DE3AFE /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 621325111CDC39E500DE3AFE /* NetworkManager.m */; };
@@ -62,6 +63,8 @@
 		4A980B081CDCC7D800D38567 /* SongInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongInfo.m; sourceTree = "<group>"; };
 		4A980B091CDCC7D800D38567 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
 		4A980B0A1CDCC7D800D38567 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		4AA380611CDDCE6A00DB0DBB /* CDSideBarControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSideBarControllerDelegate.h; sourceTree = "<group>"; };
+		4AA380621CDDCE6A00DB0DBB /* CDSideBarControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSideBarControllerDelegate.m; sourceTree = "<group>"; };
 		59254E6465B63625F78766C7 /* Pods-DouBanMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouBanMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouBanMusic/Pods-DouBanMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		621324FA1CDB300E00DE3AFE /* SidebarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarController.h; sourceTree = "<group>"; };
 		621324FB1CDB300E00DE3AFE /* SidebarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarController.m; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 		62EEB3301CD2FAE300B92023 /* CDSideBarController */ = {
 			isa = PBXGroup;
 			children = (
+				4AA380611CDDCE6A00DB0DBB /* CDSideBarControllerDelegate.h */,
+				4AA380621CDDCE6A00DB0DBB /* CDSideBarControllerDelegate.m */,
 			);
 			name = CDSideBarController;
 			sourceTree = "<group>";
@@ -373,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA380631CDDCE6A00DB0DBB /* CDSideBarControllerDelegate.m in Sources */,
 				62EEB3211CD2F69C00B92023 /* ViewController.m in Sources */,
 				4A980B0D1CDCC7D800D38567 /* DFMPlaylist.m in Sources */,
 				6213250F1CDC39D700DE3AFE /* ChannelInfo.m in Sources */,

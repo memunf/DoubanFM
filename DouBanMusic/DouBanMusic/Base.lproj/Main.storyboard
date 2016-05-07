@@ -170,13 +170,14 @@
                         <outlet property="bannedLabel" destination="jgu-gW-VKa" id="rM7-B7-B8i"/>
                         <outlet property="likedLabel" destination="hyD-kB-OGL" id="u7t-Xo-Z90"/>
                         <outlet property="loginImage" destination="HGG-qd-B7f" id="Mhm-ft-qW9"/>
+                        <outlet property="logoutButton" destination="XV3-JH-Veb" id="HnT-WP-apx"/>
                         <outlet property="playedLabel" destination="R9k-OR-29P" id="yLT-GH-FlX"/>
                         <outlet property="usernameLabel" destination="26Y-mc-efz" id="kRv-vA-YIF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLD-do-Tc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4.5" y="0.0"/>
+            <point key="canvasLocation" x="-12" y="6"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="ntJ-6X-qJF">
