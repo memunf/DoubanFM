@@ -69,6 +69,7 @@
     //歌曲播放的分钟 秒数
     int currentTimeMinutes = (unsigned)[PlayerController sharedInstance].currentPlaybackTime/60;
     int currenTimeSeconds = (unsigned)[PlayerController sharedInstance].currentPlaybackTime%60;
+    //qq
     
     
 }
