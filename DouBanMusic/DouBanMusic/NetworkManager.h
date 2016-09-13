@@ -13,7 +13,11 @@
 
 @property (weak, nonatomic)id<DoubanDelegate>delegate;
 @property (nonatomic) NSMutableString *captchaID;
-
+/**
+ *  NetworkManager
+ *
+ *  @return <#return value description#>
+ */
 + (instancetype)sharedInstancd;//类方法
 
 -(instancetype)init;
