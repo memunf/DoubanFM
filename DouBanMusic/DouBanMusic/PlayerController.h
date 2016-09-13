@@ -24,6 +24,7 @@
 -(void)startPlay;
 //播放操作
 //播放操作
+-(void)addSong;
 -(void)pauseSong;
 -(void)restartSong;
 -(void)likeSong;
