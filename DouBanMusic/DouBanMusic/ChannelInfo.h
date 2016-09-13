@@ -13,7 +13,9 @@ typedef NS_ENUM(NSUInteger, DFMChannelType) {
     DFMChannelTypeUpTrending,
     DFMChannelTypeHot,
 };
-
+/**
+ *  channelInfo
+ */
 @interface ChannelInfo : NSObject
 
 @property (nonatomic, copy) NSString *ID;
