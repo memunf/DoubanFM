@@ -22,7 +22,7 @@
 
 -(instancetype)init;
 -(void)startPlay;
-
+//播放操作
 //播放操作
 -(void)pauseSong;
 -(void)restartSong;
