@@ -23,8 +23,9 @@
 -(instancetype)init;
 -(void)startPlay;
 //播放操作
-//播放操作
--(void)addSong;
+/**
+ *  <#Description#>
+ */
 -(void)pauseSong;
 -(void)restartSong;
 -(void)likeSong;
